@@ -1,0 +1,29 @@
+<div id="cliente-view-container" class="container">
+  <div class="row text-center">
+    <a class="back-link main-color" href="/">Voltar</a>
+    <div id="img-container" class="col-md-12">
+      <img src="/img/company.svg" alt="Company">
+    </div>
+    <div class="col-md-12">
+      <h1 class="main-color">{{cliente.dataValues.nome}}</h1>
+      <p class="bold">FeedBack do cliente:</p>
+      <p class="cliente-desc">{{cliente.dataValues.description}}</p>
+      <p><span class="bold">O endereço informado é:</p>
+      <p>
+        </span> {{cliente.dataValues.endereço}}
+      </p>
+      <p>
+       <span class="bold"> O telefone para contato é: </span>
+      </p>
+      <p>
+        <span class="main-color">{{cliente.dataValues.telefone}}</span>
+      </p>
+      <p>
+        <span class="bold">Envie um e-mail para o cliente: </span>
+      </p>
+      <p>
+        <a class="main-color" href="mail:to{{cliente.dataValues.email}}">{{cliente.dataValues.email}}</a>
+      </p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+<div id="add-form-container" class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="text-center">Cadastre o cliente preenchendo o formulário</h1>
+      </div>
+      <div id="form-box" class="col-md-12">
+        <h2>Cadastro:</h2>
+        <form action="/clientes/add" method="POST">
+          <div class="form-group">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o nome completo" required>
+            <small id="nomeHelp" class="form-text text-muted">Esse campo é obrigatório</small>
+          </div>
+          <div class="form-group">
+            <label for="description">FeedBack do cliente:</label>
+            <textarea type="text" class="form-control" id="description" name="description" placeholder="Descreva as informações passadas pelo cliente" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="endereço">Endereço:</label>
+            <input type="text" class="form-control" id="endereço" name="endereço" placeholder="Digite o endereço do cliente" required>
+          </div>
+          <div class="form-group">
+            <label for="telefone">Telefone para contato:</label>
+            <input type="telefone" class="form-control" id="telefone" name="telefone" placeholder="Digite o telefone para contato" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail para contato:</label>
+            <input type="text" class="form-control" id="email" name="email" placeholder="Digite o e-mail para contato" required>
+          </div>
+          <input type="hidden" name="feedback" value="1">
+          <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
+      </div>
+    </div>
+  </div>
